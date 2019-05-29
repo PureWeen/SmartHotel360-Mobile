@@ -16,7 +16,6 @@ using SmartHotel.Clients.Droid.Services.CardEmulation;
 using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using CarouselViewRenderer = CarouselView.FormsPlugin.Android.CarouselViewRenderer;
 
 namespace SmartHotel.Clients.Droid
 {
@@ -36,7 +35,6 @@ namespace SmartHotel.Clients.Droid
             base.OnCreate(bundle);
 
             Forms.Init(this, bundle);
-            CarouselViewRenderer.Init();
             Renderers.Calendar.Init();
             Xamarin.FormsMaps.Init(this, bundle);
             Xamarin.Essentials.Platform.Init(this, bundle);
@@ -48,7 +46,7 @@ namespace SmartHotel.Clients.Droid
             RegisterPlatformDependencies();
             LoadApplication(new App());
             
-            App.AuthenticationClient.PlatformParameters = new PlatformParameters(this);
+           // App.AuthenticationClient.PlatformParameters = new PlatformParameters(this);
 
             MakeStatusBarTranslucent(false);
             InitNFCService();
@@ -70,8 +68,8 @@ namespace SmartHotel.Clients.Droid
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
             base.OnActivityResult(requestCode, resultCode, data);
-            AuthenticationAgentContinuationHelper.SetAuthenticationAgentContinuationEventArgs(
-              requestCode, resultCode, data);
+            //AuthenticationAgentContinuationHelper.SetAuthenticationAgentContinuationEventArgs(
+            //  requestCode, resultCode, data);
         }
 
         void InitMessageCenterSubscriptions() => MessagingCenter.Instance.Subscribe<StatusBarHelper, bool>(this, StatusBarHelper.TranslucentStatusChangeMessage, OnTranslucentStatusRequest);

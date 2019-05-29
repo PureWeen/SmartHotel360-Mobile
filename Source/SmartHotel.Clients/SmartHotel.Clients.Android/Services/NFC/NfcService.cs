@@ -12,7 +12,9 @@ namespace SmartHotel.Clients.Droid.Services.NFC
 
         public NfcService()
         {
+#pragma warning disable CS0618 // Type or member is obsolete
             var activity = ((Activity)Xamarin.Forms.Forms.Context);
+#pragma warning restore CS0618 // Type or member is obsolete
             nfcDevice = NfcAdapter.GetDefaultAdapter(activity);
         }
 

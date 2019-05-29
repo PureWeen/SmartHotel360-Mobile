@@ -11,7 +11,8 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Distribute;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+//TODO SHANE can we make this work?
+//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SmartHotel.Clients
 {
     public partial class App : Application

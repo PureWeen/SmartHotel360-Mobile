@@ -146,6 +146,34 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Stubs\Xamarin.Forms.Platform.Android\Xamarin.Forms.Platform.Android %28Forwarders%29.csproj">
+      <Project>{6e53feb1-1100-46ae-8013-17bba35cc197}</Project>
+      <Name>Xamarin.Forms.Platform.Android %28Forwarders%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+      <Project>{5e8be2d3-6a9e-4c67-8b2a-6f2de285ac3a}</Project>
+      <Name>Xamarin.Forms.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Maps.Android\Xamarin.Forms.Maps.Android.csproj">
+      <Project>{bd50b39a-ebc5-408f-9c5e-923a8ebae473}</Project>
+      <Name>Xamarin.Forms.Maps.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Maps\Xamarin.Forms.Maps.csproj">
+      <Project>{8dee486f-ef3b-4a65-a5be-8952b5d8ce45}</Project>
+      <Name>Xamarin.Forms.Maps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Material.Android\Xamarin.Forms.Material.Android.csproj">
+      <Project>{e1586ce6-8eac-4388-a15a-1aabf108b5f8}</Project>
+      <Name>Xamarin.Forms.Material.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Platform.Android.FormsViewGroup\Xamarin.Forms.Platform.Android.FormsViewGroup.csproj">
+      <Project>{3b72465b-acae-43ae-9327-10f372fe5f80}</Project>
+      <Name>Xamarin.Forms.Platform.Android.FormsViewGroup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Platform.Android\Xamarin.Forms.Platform.Android.csproj">
+      <Project>{0e16e70a-d6dd-4323-ad5d-363abff42d6a}</Project>
+      <Name>Xamarin.Forms.Platform.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SmartHotel.Clients\SmartHotel.Clients.csproj">
       <Project>{7ADA23CF-CB3D-4898-822F-915E251ED8F1}</Project>
       <Name>SmartHotel.Clients</Name>
@@ -1076,14 +1104,16 @@
     <AndroidResource Include="Resources\xml\apduservice.xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <PackageReference ExcludeAssets="All" Include="Xamarin.Forms" Version="4.0.0.425677">
+    </PackageReference>
+    <PackageReference ExcludeAssets="All" Include="Xamarin.Forms.Maps" Version="4.0.0.425677">
+    </PackageReference>
     <PackageReference Include="Acr.UserDialogs">
       <Version>7.0.4</Version>
     </PackageReference>
     <PackageReference Include="Autofac">
       <Version>4.9.2</Version>
-    </PackageReference>
-    <PackageReference Include="CarouselView.FormsPlugin">
-      <Version>5.2.0</Version>
     </PackageReference>
     <PackageReference Include="Microcharts">
       <Version>0.7.1</Version>
@@ -1131,16 +1161,10 @@
       <Version>1.1.0</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading">
-      <Version>2.4.5.880-pre</Version>
+      <Version>2.4.11.982</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
-      <Version>2.4.5.880-pre</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms">
-      <Version>3.6.0.293080</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms.Maps">
-      <Version>3.6.0.293080</Version>
+      <Version>2.4.11.982</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.GooglePlayServices.Base">
       <Version>60.1142.1</Version>

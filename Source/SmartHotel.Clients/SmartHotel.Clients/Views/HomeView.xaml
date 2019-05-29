@@ -5,7 +5,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SmartHotel.Clients.Core.Views.HomeView" 
     xmlns:ctrls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core"
-    xmlns:carousel="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
     xmlns:templates="clr-namespace:SmartHotel.Clients.Core.Views.Templates;assembly=SmartHotel.Clients.Core"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:controls="clr-namespace:SmartHotel.Clients.Core.Controls;assembly=SmartHotel.Clients.Core"     
@@ -150,21 +149,7 @@
                             </OnPlatform>
                         </Image.Source>
                     </Image>
-                    <carousel:CarouselViewControl 
-                        x:Name="Carousel"
-                        Orientation="Horizontal" 
-                        InterPageSpacing="0" 
-                        ShowIndicators="True"
-                        ShowArrows="True"
-                        CurrentPageIndicatorTintColor="{StaticResource WhiteColor}"
-                        ItemsSource="{Binding Notifications, Mode=OneWay}">
-                        <carousel:CarouselViewControl.ItemTemplate>
-                            <DataTemplate>
-                                <templates:NotificationItemTemplate 
-                                    TapCommand="{Binding BindingContext.NotificationsCommand, Source={x:Reference Self}}" />
-                            </DataTemplate>
-                        </carousel:CarouselViewControl.ItemTemplate>
-                    </carousel:CarouselViewControl>
+					<Label Text="Place holder for carousel view"></Label>
                     <Image 
                         Margin="0, 30, 0, 12"
                         VerticalOptions="Start"

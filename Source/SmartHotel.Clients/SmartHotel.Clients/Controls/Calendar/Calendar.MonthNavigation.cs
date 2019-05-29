@@ -214,12 +214,12 @@ namespace SmartHotel.Clients.Core.Controls
         }
 
         public static readonly BindableProperty TitleLeftArrowImageProperty = BindableProperty.Create(nameof(TitleLeftArrowImage), typeof(FileImageSource), typeof(Calendar), default(FileImageSource),
-			propertyChanged: (bindable, oldValue, newValue) => (bindable as Calendar).TitleLeftArrow.Image = (FileImageSource)newValue);
+			propertyChanged: (bindable, oldValue, newValue) => (bindable as Calendar).TitleLeftArrow.ImageSource = (FileImageSource)newValue);
 
-		public FileImageSource TitleLeftArrowImage
+		public ImageSource TitleLeftArrowImage
         {
-            get => TitleLeftArrow.Image;
-            set => TitleLeftArrow.Image = value;
+            get => TitleLeftArrow.ImageSource;
+            set => TitleLeftArrow.ImageSource = value;
         }
 
         public static readonly BindableProperty TitleLeftArrowIsEnabledCoreProperty = BindableProperty.Create(nameof(TitleLeftArrowIsEnabled), typeof(Boolean), typeof(Calendar), default(Boolean),
@@ -340,12 +340,12 @@ namespace SmartHotel.Clients.Core.Controls
         }
 
         public static readonly BindableProperty TitleRightArrowImageProperty = BindableProperty.Create(nameof(TitleRightArrowImage), typeof(FileImageSource), typeof(Calendar), default(FileImageSource),
-			propertyChanged: (bindable, oldValue, newValue) => (bindable as Calendar).TitleRightArrow.Image = (FileImageSource)newValue);
+			propertyChanged: (bindable, oldValue, newValue) => (bindable as Calendar).TitleRightArrow.ImageSource = (FileImageSource)newValue);
 
-		public FileImageSource TitleRightArrowImage
+		public ImageSource TitleRightArrowImage
         {
-            get => TitleRightArrow.Image;
-            set => TitleRightArrow.Image = value;
+            get => TitleRightArrow.ImageSource;
+            set => TitleRightArrow.ImageSource = value;
         }
 
         public static readonly BindableProperty TitleRightArrowIsEnabledCoreProperty = BindableProperty.Create(nameof(TitleRightArrowIsEnabled), typeof(Boolean), typeof(Calendar), default(Boolean),

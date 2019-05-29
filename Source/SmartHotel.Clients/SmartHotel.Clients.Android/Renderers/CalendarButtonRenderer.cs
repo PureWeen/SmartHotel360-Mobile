@@ -99,7 +99,9 @@ namespace SmartHotel.Clients.Droid.Renderers
 
             var d = new List<Drawable>();
             var image = await GetBitmap(element.BackgroundImage);
+#pragma warning disable CS0618 // Type or member is obsolete
             d.Add(new BitmapDrawable(image));
+#pragma warning restore CS0618 // Type or member is obsolete
             var layer = new LayerDrawable(d.ToArray());
             layer.SetLayerInset(d.Count - 1, 0, 0, 0, 0);
             Control?.SetBackground(layer);
