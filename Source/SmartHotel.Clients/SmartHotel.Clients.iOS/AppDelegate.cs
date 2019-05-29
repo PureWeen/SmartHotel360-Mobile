@@ -1,6 +1,4 @@
-﻿using CarouselView.FormsPlugin.iOS;
-using FFImageLoading.Forms.Touch;
-using Foundation;
+﻿using Foundation;
 using Microcharts.Forms;
 using Microsoft.Identity.Client;
 using SmartHotel.Clients.Core.Services.Authentication;
@@ -44,7 +42,6 @@ namespace SmartHotel.Clients.iOS
 #endif
             Forms.Init();
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
-            CarouselViewRenderer.Init();
             Renderers.Calendar.Init();
             Xamarin.FormsMaps.Init();
             InitChartView();

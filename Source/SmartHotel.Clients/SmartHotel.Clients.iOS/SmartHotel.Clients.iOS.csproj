@@ -209,48 +209,6 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Acr.Support.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Acr.Support.2.1.0\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Autofac, Version=4.6.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Autofac.4.6.1\lib\netstandard1.1\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="BTProgressHUD, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\BTProgressHUD.1.2.0.5\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
-    </Reference>
-    <Reference Include="Calabash, Version=21.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.TestCloud.Agent.0.21.4\lib\Xamarin.iOS\Calabash.dll</HintPath>
-    </Reference>
-    <Reference Include="CarouselView.FormsPlugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CarouselView.FormsPlugin.4.4.3\lib\Xamarin.iOS10\CarouselView.FormsPlugin.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="CarouselView.FormsPlugin.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\CarouselView.FormsPlugin.4.4.3\lib\Xamarin.iOS10\CarouselView.FormsPlugin.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter.Analytics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.Analytics.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.Analytics.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter.Crashes, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.Crashes.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.Crashes.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter.Distribute, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.Distribute.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Distribute.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter.Distribute.iOS.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.Distribute.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Distribute.iOS.Bindings.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AppCenter.iOS.Bindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AppCenter.1.7.0\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.IO.Compression" />
@@ -260,6 +218,30 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+      <Project>{5e8be2d3-6a9e-4c67-8b2a-6f2de285ac3a}</Project>
+      <Name>Xamarin.Forms.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Maps.iOS\Xamarin.Forms.Maps.iOS.csproj">
+      <Project>{aba078c4-f9bb-4924-8b2b-10fe0d2f5491}</Project>
+      <Name>Xamarin.Forms.Maps.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Maps\Xamarin.Forms.Maps.csproj">
+      <Project>{8dee486f-ef3b-4a65-a5be-8952b5d8ce45}</Project>
+      <Name>Xamarin.Forms.Maps</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Material.iOS\Xamarin.Forms.Material.iOS.csproj">
+      <Project>{8a75b1dc-ceed-4b1b-8675-a7dffd1e6de4}</Project>
+      <Name>Xamarin.Forms.Material.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Platform.iOS\Xamarin.Forms.Platform.iOS.csproj">
+      <Project>{271193c1-6e7c-429c-a36d-3f1be5267231}</Project>
+      <Name>Xamarin.Forms.Platform.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xamarin.Forms\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj">
+      <Project>{67d1f711-1744-42d4-bb77-a26e36068074}</Project>
+      <Name>Xamarin.Forms.Xaml</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SmartHotel.Clients\SmartHotel.Clients.csproj">
       <Project>{7ADA23CF-CB3D-4898-822F-915E251ED8F1}</Project>
       <Name>SmartHotel.Clients</Name>
@@ -615,13 +597,14 @@
       <Version>1.1.0</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading">
-      <Version>2.4.5.880-pre</Version>
+      <Version>2.4.11.982</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
-      <Version>2.4.5.880-pre</Version>
+      <Version>2.4.11.982</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms">
-      <Version>3.6.0.293080</Version>
+    <PackageReference ExcludeAssets="All" Include="Xamarin.Forms" Version="4.0.0.425677">
+    </PackageReference>
+    <PackageReference ExcludeAssets="All" Include="Xamarin.Forms.Maps" Version="4.0.0.425677">
     </PackageReference>
     <PackageReference Include="Xamarin.TestCloud.Agent">
       <Version>0.21.7</Version>

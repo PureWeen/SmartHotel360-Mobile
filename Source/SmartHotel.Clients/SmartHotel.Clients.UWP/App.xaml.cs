@@ -1,6 +1,4 @@
-﻿using CarouselView.FormsPlugin.UWP;
-using FFImageLoading.Forms;
-using FFImageLoading.Forms.WinUWP;
+﻿using FFImageLoading.Forms;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -57,7 +55,6 @@ namespace SmartHotel.Clients.UWP
                 {
                     typeof(CachedImage).GetTypeInfo().Assembly,
                     typeof(FFImageLoading.Forms.Platform.CachedImageRenderer).GetTypeInfo().Assembly,
-                    typeof(CarouselViewRenderer).GetTypeInfo().Assembly
                 };
 
                 Rg.Plugins.Popup.Popup.Init();

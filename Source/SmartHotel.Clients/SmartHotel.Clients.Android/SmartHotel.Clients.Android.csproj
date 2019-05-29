@@ -1104,7 +1104,6 @@
     <AndroidResource Include="Resources\xml\apduservice.xml" />
   </ItemGroup>
   <ItemGroup>
-
     <PackageReference ExcludeAssets="All" Include="Xamarin.Forms" Version="4.0.0.425677">
     </PackageReference>
     <PackageReference ExcludeAssets="All" Include="Xamarin.Forms.Maps" Version="4.0.0.425677">
